@@ -14,7 +14,7 @@ const userSchema = new mongoose.Schema({
     Email: String,
     Login_Token: String,
     Login_Status: Number,
-    
+
     Status_Enum: Boolean,
     Lock_Id: Number,
     Last_Modify_Date: Date,    
@@ -49,4 +49,16 @@ const documentSchema = new mongoose.Schema({
 
     
 });
+
+// {
+//     "Document_Name": "Term Insurance",
+//     "Document_Type": "Term",
+//     "Document_File_Path": "D:/Documents/Insurance/TermInsurance",
+//     "Document_Upload_Date": "2024-11-10T05:21:22.233Z",
+//     "Document_Expire_Date": "2024-11-10T05:21:22.233Z",,
+
+//     "Status_Enum": 1,
+//     "Lock_Id": 0,
+//     "Last_Modify_Date": "2024-11-10T05:21:22.233Z",,        
+// }
 //#endregion
