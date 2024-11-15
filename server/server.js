@@ -1,12 +1,14 @@
 require("dotenv").config();
 const express = require("express");
 const app = express();
+const cookieParser = require("cookie-parser");
 
 // CORS added for Deployement purpose
 const cors = require("cors");
 app.use(cors());
 // CORS added for Deployement purpose
 
+app.use(cookieParser());
 app.use(express.json());
 
 const HealthRoute = require("./routes/route");
